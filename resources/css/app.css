@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@source "../views";
+
+@theme{ 
+    --color-AzulCybac:#072C52;
+    --color-MostazaCybac:#F9A726;
+}
