@@ -1,0 +1,6 @@
+
+
+
+<label {{ $attributes }}>
+    {{ $slot }}
+</label>

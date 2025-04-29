@@ -22,6 +22,7 @@
         </div>
     </div>
 
+    
    
     <div class="flex px-6 py-6 items-center space-x-6 flex-grow">
         <div class="w-1/2">
@@ -46,5 +47,25 @@
         <img src="{{ asset('storage/img/banner.jpg') }}" class="w-full">
     </div>
 
+
+    <div class="">
+        <i class="fi fi-tr-hashtag-lock"></i>
+        <i class="fi fi-tr-file-circle-info"></i>
+        <i class="fi fi-tr-pen-circle"></i>
+        <i class="fi fi-tr-ballot-check"></i>
+        <i class="fi fi-ts-sign-out-alt"></i>
+        <i class="fi fi-tr-overview"></i>
+        <i class="fi fi-tr-ballot"></i>
+        <i class="fi fi-ts-print"></i>
+        <i class="fi fi-ts-boxes"></i>
+        <i class="fi fi-tr-customer-service"></i>
+        <i class="fi fi-ts-circle-user"></i>
+        <i class="fi fi-ts-building-lock"></i>
+
+        
+       
+    </div>
+    
+    <x-organisms.sidebar></x-organisms.sidebar>
 </body>
 </html>

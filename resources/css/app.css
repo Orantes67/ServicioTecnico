@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@import "@flaticon/flaticon-uicons/css/all/all.css";
 @source "../views";
 
 @theme{ 
     --color-AzulCybac:#072C52;
     --color-MostazaCybac:#F9A726;
+    --text-SizeIcon:50px;
 }

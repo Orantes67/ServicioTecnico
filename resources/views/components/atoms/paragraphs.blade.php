@@ -1,0 +1,6 @@
+
+
+
+<p {{ $attributes }}>
+    {{ $slot }}
+</p>
