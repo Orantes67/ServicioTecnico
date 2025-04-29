@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import "tailwindcss";
 @import "@flaticon/flaticon-uicons/css/all/all.css";
+
 @source "../views";
 
-@theme{ 
-    --color-AzulCybac:#072C52;
-    --color-MostazaCybac:#F9A726;
-    --text-SizeIcon:50px;
+@theme { 
+    --color-AzulCybac: #072C52;
+    --color-MostazaCybac: #F9A726;
+    --text-SizeIcon: 50px;
+    --color-AzulSidebar: #EBF7FF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
