@@ -1,1 +1,1 @@
-<i class="fi fi-tr-file-circle-info"></i>
+<i class="fi fi-tr-file-circle-info text-SizeIcon"></i>

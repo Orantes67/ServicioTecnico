@@ -1,1 +1,1 @@
-<i class="fi fi-tr-overview"></i>
+<i class="fi fi-tr-overview text-SizeIcon"></i>

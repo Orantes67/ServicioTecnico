@@ -1,1 +1,1 @@
-<i class="fi fi-tr-ballot-check"></i>
+<i class="fi fi-tr-ballot-check text-SizeIcon"></i>

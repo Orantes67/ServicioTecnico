@@ -1,6 +1,6 @@
 @props(['text'=>'Default_text'])
 
-<div>
+<div class="flex flex-nowrap">
     <x-atoms.icons.icon_closeOrder />
     <x-atoms.button {{ $attributes }}>
         {{ $text }} 

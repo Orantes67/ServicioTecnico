@@ -1,1 +1,1 @@
-<i class="fi fi-tr-hashtag-lock"></i>
+<i class="fi fi-tr-hashtag-lock text-SizeIcon"></i>

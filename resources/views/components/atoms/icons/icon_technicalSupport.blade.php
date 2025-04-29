@@ -1,1 +1,1 @@
-<i class="fi fi-tr-customer-service"></i>
+<i class="fi fi-tr-customer-service text-SizeIcon"></i>

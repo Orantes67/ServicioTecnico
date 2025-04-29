@@ -1,1 +1,1 @@
-<i class="fi fi-ts-boxes"></i>
+<i class="fi fi-ts-boxes text-SizeIcon"></i>
