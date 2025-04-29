@@ -1,5 +1,5 @@
+@props(['class'=> ''])
 
-
-<button {{ $attributes }}>
+<button {{ $attributes->merge(['class'=> $class])}}>
     {{ $slot }}
 </button>

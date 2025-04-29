@@ -1,3 +1,3 @@
+@props(['class'-> ''])
 
-
-<input {{ $attributes }}>
+<input {{ $attributes-> merge(['class' => $class])}}>
