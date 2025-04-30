@@ -1,9 +1,11 @@
 @props(['text'=>'Default_text'])
 
 
-<div class="flex flex-nowrap">
-    <x-atoms.icons.icon_service/>
-    <x-atoms.button {{ $attributes }}>
+<div  class="flex items-center gap-x-4 w-full">
+    <div >
+        <x-atoms.icons.icon_service/>
+    </div>
+    <x-atoms.button {{ $attributes }} >
         {{ $text }} 
     </x-atoms.button>
 </div>
