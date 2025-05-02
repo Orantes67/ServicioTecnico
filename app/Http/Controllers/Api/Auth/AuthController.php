@@ -11,22 +11,19 @@ class Authenticatable extends Controller
     
     public function login(Request $request)
     {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+        $credentials = $request->only('email', 'password');
 
         if (!Auth::attempt($credentials)) {
-            return response()->json(['message' => 'Credenciales incorrectas'], 401);
+            return response()->json(['message' => 'Unauthorized'], 401);
         }
 
         $user = Auth::user();
-        $token = $user->createToken('api_token')->plainTextToken;
+        $token = $user->createToken('API Token')->plainTextToken;
 
-        return response()->json([
-            'user' => $user->load('role'),
-            'token' => $token
-        ]);
+    return response()->json([
+        'token' => $token,
+        'user' => $user
+    ]);
     }
 
     public function logout(Request $request)
