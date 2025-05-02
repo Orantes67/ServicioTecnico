@@ -1,24 +1,15 @@
 <?php
 
+// app/Models/Service.php
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+class Service extends Model
+{
+    use HasFactory;
 
-class Service extends Model{
-  use HasFactory;
-
-
-
-  protected $fillable = [
-    'name',
-    'cost',
-    'description'
-];
-
-public function Service()
-    {
-        return $this->belongsTo(Service::class);
-    }
+    protected $table = 'service';
+    protected $fillable = ['name', 'cost', 'descripcion'];
 }
