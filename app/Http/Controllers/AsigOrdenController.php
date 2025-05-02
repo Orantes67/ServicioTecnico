@@ -1,12 +1,11 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-use App\Models\AssignedOrder;
 use Illuminate\Http\Request;
+use App\Models\AssignedOrder;
 
-class AssignedOrderController extends Controller
+class AsigOrdenController extends Controller
 {
     public function index()
     {

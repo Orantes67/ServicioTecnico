@@ -1,10 +1,10 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-use App\Models\Service;
 use Illuminate\Http\Request;
+use App\Models\Service;
+
 
 class ServiceController extends Controller
 {

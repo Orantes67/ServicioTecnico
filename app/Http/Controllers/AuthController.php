@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
-class Authenticatable extends Controller
+class AuthController extends Controller
 {
-    
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
@@ -20,10 +19,10 @@ class Authenticatable extends Controller
         $user = Auth::user();
         $token = $user->createToken('API Token')->plainTextToken;
 
-    return response()->json([
-        'token' => $token,
-        'user' => $user
-    ]);
+        return response()->json([
+            'token' => $token,
+            'user' => $user
+        ]);
     }
 
     public function logout(Request $request)
@@ -32,7 +31,6 @@ class Authenticatable extends Controller
         return response()->json(['message' => 'Sesión cerrada']);
     }
 
-   
     public function me(Request $request)
     {
         return response()->json($request->user()->load('role'));

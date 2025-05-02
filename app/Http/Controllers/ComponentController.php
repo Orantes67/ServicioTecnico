@@ -1,10 +1,9 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-use App\Models\Component;
 use Illuminate\Http\Request;
+use App\Models\Component;
 
 class ComponentController extends Controller
 {
