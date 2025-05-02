@@ -30,3 +30,4 @@ Route::apiResource('services', ServiceController::class);
 Route::apiResource('components', ComponentController::class);
 Route::apiResource('assigned-orders', AssignedOrderController::class);
 Route::apiResource('roles', RoleController::class);
+Route::apiResource('users', UserController::class);
