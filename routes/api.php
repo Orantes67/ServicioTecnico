@@ -25,9 +25,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::apiResource('clients', clientController::class);
-Route::apiResource('services', ServiceController::class);
-Route::apiResource('components', ComponentController::class);
-Route::apiResource('assigned-orders', AssignedOrderController::class);
-Route::apiResource('roles', RoleController::class);
-Route::apiResource('users', UserController::class);
+
+Route::post('/login', [Authenticatable::class, 'login']);
+
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [Authenticatable::class, 'logout']);
+    Route::get('/me', [Authenticatable::class, 'me']);
+
+    Route::apiResource('clients', ClientController::class);
+    Route::apiResource('services', ServiceController::class);
+    Route::apiResource('components', ComponentController::class);
+    Route::apiResource('assigned-orders', AsigOrderController::class);
+    Route::apiResource('roles', RoleController::class);
+    Route::apiResource('users', UserController::class);
+});
